@@ -1,0 +1,20 @@
+<!--<input type="text"
+[(ngModel)]="serverName"
+/>-->
+<br />
+<input type="button" 
+class="btn btn-primary"
+value="Reset Server"
+(click)="resetServerName()"
+[disabled]="disabledButton"
+/>
+<p *ngIf="serverName!==''">{{serverStatus}}</p>
+<hr />
+<input type="text"
+(input)="setServerName($event)"
+/>
+<input type="button" 
+class="btn btn-info"
+value="Add Server"
+(click)="addServer()"
+/>
