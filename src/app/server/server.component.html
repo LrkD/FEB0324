@@ -14,7 +14,7 @@ value="Reset Server"
 (input)="setServerName($event)"
 />
 <input type="button" 
-class="btn btn-info"
+[ngStyle]="addButtonCSSStyles()"
 value="Add Server"
 (click)="addServer()"
 />

@@ -22,4 +22,13 @@ export class ServerComponent {
     addServer(){
       this.serverStatus = "A server with a name " + this.serverName + " has been added";
     }
+
+    addButtonCSSStyles(){
+      let CssStyles = {
+        'color': 'red',
+        'font-weight': 'bold',
+        'font-size.px': 20
+      };
+      return CssStyles;
+    }
 }
